@@ -1,0 +1,333 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+    font-style: italic;
+    font-weight: normal;
+    font-family: Calibri, sans-serif;
+}
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+h1, h2 {
+    font-family: SpotCookieRegular, sans-serif;
+    color: #ecc053;
+    font-size: 3em;
+    font-style: normal; 
+}
+h2 {
+    font-size: 60px;
+}
+
+/* .....................................STRONA GŁÓWNA........................................... */
+
+.main {
+    height: 100vh;
+    background-image: url('img/piekarnik_main.jpg');
+    box-shadow: 0 0 20px black;
+}
+.socials {
+   text-align: right;
+   padding: 40px 30px;
+}
+.socials img {
+    margin-right: 20px;
+}
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.logo:hover, .logo:focus, .logo:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+.main-navigation {
+    z-index: 1;
+}
+.main {
+}
+.main-navigation li {
+    display: inline;
+    color: white;
+    margin: 20px;
+    list-style-type: none;
+}
+.main-navigation li a{
+    color: white;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    font-family: Cookie, sans-serif;
+    font-style: normal;
+    font-size: 38px;
+}
+.main-navigation a:hover {
+    color: #ecc053;  
+}
+.main h1 {
+    font-size: 80px;
+    text-shadow: 1px 1px 2px black;
+    padding-top: 150px;
+}
+
+/* ............NAVBAR AFTER SCROLLING........... */
+.scrolling-active {
+    margin: 0 auto;
+    text-align: center;
+    background-color: red;
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2D2E32;
+    height: 100px;
+}
+.scrolling-active li a {
+    font-size: 28px;
+}
+.scrolling-active .logo {
+    width: 10%;
+}
+
+
+
+/* .....................................O NAS........................................... */
+.o-nas {
+    width: 960px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.o-nas-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.o-nas-main p, .o-nas-main img {
+    justify-self: start;
+    text-align: left;
+    margin: 30px;
+}
+.o-nas-main img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.o-nas-1 {
+    transform: rotate(3deg) perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.o-nas-1:hover {
+    transform: scale(1.1);
+}
+.o-nas-2 {
+    transform: rotate(-3deg) perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    margin-top: 20px;   
+}
+.o-nas-2:hover {
+    transform: scale(1.1);
+}
+.o-nas-mocne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+.o-nas-mocne li {
+    font-size: 18px;
+    text-align: left;
+    margin: 5px;
+}
+
+/* .....................................MENU........................................... */
+
+.menu {
+    background-color: #2D2E32;
+    color: white;
+    padding-bottom: 50px;
+}
+.menu h2 {
+    padding-top: 50px;
+}
+.menu p {
+    max-width: 800px;
+    margin: 15px auto;
+    font-size: 20px;
+}
+.menu-containter {
+    width: 1000px;
+    margin: 0 auto;
+}
+.menu-containter p {
+    margin-top: 30px;
+}
+.menu-navigation {
+    margin: 30px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.menu-navigation div {
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    transition-duration: 0.5s;
+}
+.menu-navigation div:hover {
+    background-color: white;
+    color: black;
+}
+.menu-navigation-element {
+    background-color: #ecc053;
+    padding: 20px;
+    margin: 20px 20px 0 20px;
+    color: black;
+}
+.menu-displayed {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+.menu-displayed-item {
+    width: 450px;
+    border: dashed 2px #ecc053;
+    text-align: left;
+    padding: 30px;
+    margin: 10px;
+}
+.menu-displayed-item h3 {
+    color: white;
+    font-family: Cookie;
+    font-style: normal;
+    font-size: 40px;
+    margin: 0;
+}
+.menu-displayed-item h4 {
+    margin-bottom: 0;
+}
+.menu-displayed-item span {
+    float: right;
+    color: #ecc053;
+    font-size: 18px;
+} 
+.food-item {
+    border-bottom: #ecc053 dashed 1px;
+    margin-top: 13px;
+}
+.food-item h4 {
+    color: #ecc053;
+    font-size: 22px;
+    display: inline;
+}
+.food-item p {
+    color: white;
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 16px;
+}
+.dania-glowne {
+    /* display: none; */
+}
+.desery {
+    display: none;
+}
+.napoje {
+    display: none;
+}
+.dla-dzieci {
+    display: none;
+}
+
+/* .....................................GALERIA........................................... */
+.gallery-containter {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gallery-containter img {
+    width: 320px;
+    height: 240px;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    margin: 10px;
+  }
+  .gallery-containter img:hover, .gallery-containter img:focus, .gallery-containter img:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+
+/* .....................................KONTAKT........................................... */
+
+footer {
+    background-color: #EDEDED;
+    margin-top: 50px;
+    padding-top: 20px;
+
+}
+.footer-container {
+    display: grid;
+    justify-items: start;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 100px 100px 400px;
+    width: 950px;
+    margin: 0 auto;
+    font-size: 24px;
+}
+.adres {
+    grid-row: 1 / 3;
+    text-align: left;
+}
+.adres img {
+    margin: 0px 10px 0 0;
+}
+
+.telefon {
+    grid-column: 2 / 3;
+}
+.telefon img, .mail img, .facebook img, .instagram img  {
+    margin: 2px 10px 0 0;
+}
+.adres-dane, .telefon-dane, .mail-dane, .fb-dane, .insta-dane {
+    float: right;
+}
+.mail {
+    grid-column: 3 / 4;
+}
+
+.godziny {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    place-self: center;
+    font-size: 1.3em;
+    align-self: start;
+}
+.mapka {
+    grid-column: 1/4;
+    grid-row: 4/5;
+    place-self: center;
+    border: solid 8px white;
+}
+footer p {
+    margin-bottom: 0px;
+    padding: 30px;
+}
